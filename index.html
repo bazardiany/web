@@ -50,9 +50,9 @@
         }
         
         .product-card {
-            transition: all 0.3s ease;
             opacity: 0;
             transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
         }
         
         .product-card.show {
@@ -90,7 +90,7 @@
     <section class="hero-bg min-h-screen flex items-center justify-center text-white">
         <div class="logo-container text-center px-4">
             <div class="mb-8">
-                <img src="https://i.imgur.com/m4COCKi.png" alt="logo" class="mx-auto />
+                <img src="https://i.imgur.com/m4COCKi.png" alt="logo" class="mx-auto" />
             </div>
             <h1 class="text-6xl md:text-8xl font-bold mb-4 text-shadow-lg">Bazar Diany</h1>
             <p class="text-xl md:text-2xl font-light opacity-90">¡Lo Mejor al mejor precio!</p>
@@ -111,15 +111,15 @@
                     <div class="mb-6">
                         <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f2cca150-6e04-43c9-bc7c-34fc3aeca8c1.png" alt="Wide variety of colorful kitchen utensils, cookware and appliances displayed on modern shelves" class="w-full h-48 object-cover rounded-lg" />
                     </div>
-                    <h3 class="text-2xl font-semibold mb-4 text-purple-600">Variedad Única</h3>
-                    <p class="text-gray-600">Encontrarás productos únicos y especiales que no verás en otros lugares. Cada artículo es cuidadosamente seleccionado.</p>
+                    <h3 class="text-2xl font-semibold mb-4 text-purple-600">Catalogo gigante</h3>
+                    <p class="text-gray-600">Encontrarás todo tipo de producto que necesites,cosas donde en otros lados no encuentras.</p>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-lg">
                     <div class="mb-6">
                         <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/00b8e328-566a-479f-a2f0-02d025dd4b4e.png" alt="Happy customers shopping and smiling while examining quality products in a bright, welcoming store environment" class="w-full h-48 object-cover rounded-lg" />
                     </div>
-                    <h3 class="text-2xl font-semibold mb-4 text-purple-600">Calidad Garantizada</h3>
-                    <p class="text-gray-600">Todos nuestros productos pasan por un riguroso control de calidad para asegurar tu satisfacción total.</p>
+                    <h3 class="text-2xl font-semibold mb-4 text-purple-600">Venta por mayor y menor</h3>
+                    <p class="text-gray-600">Todos nuestros productos se venden a por mayor y menor, siempre complaciendo las necesidades de nuestros clientes.</p>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-lg">
                     <div class="mb-6">
@@ -137,35 +137,65 @@
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-12">Nuestras Categorías</h2>
             <div class="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 mb-12">
-                <div class="category-card bg-gradient-to-br from-orange-400 to-red-500 text-white p-6 rounded-2xl text-center" data-category="cocina">
+                <div class="category-card bg-gradient-to-br from-blue-400 to-indigo-500 text-white p-6 rounded-2xl text-center" data-category="ropa-hombres">
                     <div class="mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/91df22f5-bac5-44cc-9911-db3923a27f4c.png" alt="Modern kitchen with stainless steel appliances, colorful cookware and utensils arranged on marble countertops" class="w-16 h-16 mx-auto rounded-full" />
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e1225c2c-4037-47d3-96e4-3075179ea52c.png" alt="Stylish men's clothing" class="w-16 h-16 mx-auto rounded-full" />
                     </div>
-                    <h3 class="font-semibold text-lg">Cocina</h3>
+                    <h3 class="font-semibold text-lg">Ropa para Hombres</h3>
                 </div>
-                <div class="category-card bg-gradient-to-br from-pink-400 to-purple-500 text-white p-6 rounded-2xl text-center" data-category="ropa">
+                <div class="category-card bg-gradient-to-br from-pink-400 to-purple-500 text-white p-6 rounded-2xl text-center" data-category="ropa-mujer">
                     <div class="mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e1225c2c-4037-47d3-96e4-3075179ea52c.png" alt="Stylish clothing rack with colorful dresses, shirts and accessories displayed in a modern boutique setting" class="w-16 h-16 mx-auto rounded-full" />
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e1225c2c-4037-47d3-96e4-3075179ea52c.png" alt="Stylish women's clothing" class="w-16 h-16 mx-auto rounded-full" />
                     </div>
-                    <h3 class="font-semibold text-lg">Ropa</h3>
+                    <h3 class="font-semibold text-lg">Ropa para Mujer</h3>
                 </div>
-                <div class="category-card bg-gradient-to-br from-blue-400 to-indigo-500 text-white p-6 rounded-2xl text-center" data-category="accesorios">
+                <div class="category-card bg-gradient-to-br from-yellow-400 to-orange-500 text-white p-6 rounded-2xl text-center" data-category="ropa-interior">
                     <div class="mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7c3b95a3-8d3d-478d-9fc1-cdd355b5eeb9.png" alt="Collection of fashionable accessories including handbags, sunglasses, watches and scarves arranged on elegant display stand" class="w-16 h-16 mx-auto rounded-full" />
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e1225c2c-4037-47d3-96e4-3075179ea52c.png" alt="Underwear" class="w-16 h-16 mx-auto rounded-full" />
                     </div>
-                    <h3 class="font-semibold text-lg">Accesorios</h3>
+                    <h3 class="font-semibold text-lg">Ropa Interior</h3>
+                </div>
+                <div class="category-card bg-gradient-to-br from-green-400 to-teal-500 text-white p-6 rounded-2xl text-center" data-category="calzado">
+                    <div class="mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5d398a05-ae06-40b9-ab3e-686e2b98fb00.png" alt="Various types of footwear" class="w-16 h-16 mx-auto rounded-full" />
+                    </div>
+                    <h3 class="font-semibold text-lg">Calzado</h3>
                 </div>
                 <div class="category-card bg-gradient-to-br from-yellow-400 to-orange-500 text-white p-6 rounded-2xl text-center" data-category="joyas">
                     <div class="mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4965d0b2-3bb1-4772-b088-98ff08b47f43.png" alt="Elegant jewelry display with sparkling necklaces, rings, earrings and bracelets on luxurious velvet background" class="w-16 h-16 mx-auto rounded-full" />
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4965d0b2-3bb1-4772-b088-98ff08b47f43.png" alt="Elegant jewelry" class="w-16 h-16 mx-auto rounded-full" />
                     </div>
                     <h3 class="font-semibold text-lg">Joyas</h3>
                 </div>
-                <div class="category-card bg-gradient-to-br from-green-400 to-teal-500 text-white p-6 rounded-2xl text-center" data-category="textil">
+                <div class="category-card bg-gradient-to-br from-purple-400 to-red-500 text-white p-6 rounded-2xl text-center" data-category="accesorios">
                     <div class="mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5d398a05-ae06-40b9-ab3e-686e2b98fb00.png" alt="Cozy textile display with colorful fabrics, cushions, blankets and home decor items arranged in warm, inviting setting" class="w-16 h-16 mx-auto rounded-full" />
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7c3b95a3-8d3d-478d-9fc1-cdd355b5eeb9.png" alt="Fashion accessories" class="w-16 h-16 mx-auto rounded-full" />
+                    </div>
+                    <h3 class="font-semibold text-lg">Accesorios</h3>
+                </div>
+                <div class="category-card bg-gradient-to-br from-orange-400 to-red-500 text-white p-6 rounded-2xl text-center" data-category="cocina">
+                    <div class="mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/91df22f5-bac5-44cc-9911-db3923a27f4c.png" alt="Kitchenware" class="w-16 h-16 mx-auto rounded-full" />
+                    </div>
+                    <h3 class="font-semibold text-lg">Cocina</h3>
+                </div>
+                <div class="category-card bg-gradient-to-br from-gray-400 to-gray-600 text-white p-6 rounded-2xl text-center" data-category="tecnologia">
+                    <div class="mb-4">
+                        <img src="https://i.imgur.com/pC68izZ.png" alt="Electronic gadgets" class="w-16 h-16 mx-auto rounded-full" />
+                    </div>
+                    <h3 class="font-semibold text-lg">Tecnología</h3>
+                </div>
+                <div class="category-card bg-gradient-to-br from-cyan-400 to-blue-500 text-white p-6 rounded-2xl text-center" data-category="textil">
+                    <div class="mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5d398a05-ae06-40b9-ab3e-686e2b98fb00.png" alt="Home textiles" class="w-16 h-16 mx-auto rounded-full" />
                     </div>
                     <h3 class="font-semibold text-lg">Textil</h3>
+                </div>
+                <div class="category-card bg-gradient-to-br from-red-400 to-pink-500 text-white p-6 rounded-2xl text-center" data-category="electrodomesticos">
+                    <div class="mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f2cca150-6e04-43c9-bc7c-34fc3aeca8c1.png" alt="Home appliances" class="w-16 h-16 mx-auto rounded-full" />
+                    </div>
+                    <h3 class="font-semibold text-lg">Electrodomésticos</h3>
                 </div>
             </div>
 
@@ -174,6 +204,17 @@
                 <h3 id="category-title" class="text-3xl font-bold text-center text-gray-800 mb-8"></h3>
                 <div id="products-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
                     <!-- Products will be dynamically loaded here -->
+                </div>
+                <div class="mt-12 p-8 bg-purple-100 rounded-2xl shadow-lg text-center">
+                    <p class="text-xl md:text-2xl font-semibold text-purple-800 mb-6">
+                        ¡Tenemos un catálogo más grande!
+                    </p>
+                    <p class="text-lg text-gray-700 mb-8">
+                        Puedes consultar por nuestro número de contacto para ver más opciones y productos exclusivos.
+                    </p>
+                    <button onclick="consultWhatsAppGeneral()" class="whatsapp-btn text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                        Consultar Catálogo por WhatsApp
+                    </button>
                 </div>
             </div>
         </div>
@@ -200,164 +241,324 @@
 
     <script>
         const products = {
-            cocina: [
+            "ropa-hombres": [
                 {
-                    name: "Set de Cuchillos Profesional",
-                    price: "$15,999",
-                    image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a27b5d88-df71-4907-be11-4250517bd322.png",
-                    alt: "Professional stainless steel knife set with wooden block holder and sharp cutting blades for kitchen use"
+                    name: "Remeras",
+                    price: "",
+                    image: "https://i.imgur.com/8pOB6m9.png",
+                    alt: "Men's casual cotton shirt"
                 },
                 {
-                    name: "Sartén Antiadherente Premium",
-                    price: "$8,500",
-                    image: "https://placehold.co/300x300",
-                    alt: "Premium non-stick frying pan with ergonomic handle and ceramic coating for healthy cooking"
+                    name: "Pantalones",
+                    price: "",
+                    image: "https://i.imgur.com/6WVUURl.png",
+                    alt: "Men's slim fit chino pants"
                 },
                 {
-                    name: "Batidora de Acero Inoxidable",
-                    price: "$12,300",
-                    image: "https://placehold.co/300x300",
-                    alt: "Stainless steel stand mixer with multiple attachments and powerful motor for baking and cooking"
+                    name: "Shorts",
+                    price: "",
+                    image: "https://i.imgur.com/yXL4tIL.png",
+                    alt: "Men's leather jacket"
                 },
                 {
-                    name: "Juego de Ollas Multicapa",
-                    price: "$22,800",
-                    image: "https://placehold.co/300x300",
-                    alt: "Multi-layer cookware set with various sized pots and pans featuring heat-resistant handles"
+                    name: "Camisas",
+                    price: "",
+                    image: "https://i.imgur.com/nVXLbfv.png",
+                    alt: "Men's hooded sweatshirt"
                 },
                 {
-                    name: "Procesadora de Alimentos",
-                    price: "$18,600",
-                    image: "https://placehold.co/300x300",
-                    alt: "Electric food processor with multiple blades and containers for chopping, slicing and mixing ingredients"
+                    name: "Medias",
+                    price: "",
+                    image: "https://i.imgur.com/qe5flC2.png",
+                    alt: "Men's classic straight jeans"
                 }
             ],
-            ropa: [
+            "ropa-mujer": [
                 {
-                    name: "Vestido Floral Verano",
-                    price: "$7,200",
-                    image: "https://placehold.co/300x300",
-                    alt: "Beautiful floral summer dress with vibrant colors, flowing fabric and comfortable fit for casual wear"
+                    name: "Blusas",
+                    price: "",
+                    image: "https://i.imgur.com/F9Uoh6v.png",
+                    alt: "Women's floral summer dress"
                 },
                 {
-                    name: "Camisa de Lino Elegante",
-                    price: "$5,800",
-                    image: "https://placehold.co/300x300",
-                    alt: "Elegant linen shirt in neutral color with classic collar and breathable fabric for formal occasions"
+                    name: "Vestidos",
+                    price: "",
+                    image: "https://i.imgur.com/TokUfhl.png",
+                    alt: "Women's elegant silk blouse"
                 },
                 {
-                    name: "Jeans Premium Denim",
-                    price: "$9,500",
-                    image: "https://placehold.co/300x300",
-                    alt: "Premium denim jeans with modern cut, comfortable fit and high-quality stitching in classic blue"
+                    name: "Faldas",
+                    price: "",
+                    image: "https://i.imgur.com/oevfzFV.png",
+                    alt: "Women's pleated midi skirt"
                 },
                 {
-                    name: "Blazer Ejecutivo",
-                    price: "$12,000",
-                    image: "https://placehold.co/300x300",
-                    alt: "Professional executive blazer in navy blue with tailored fit and elegant lapels for business wear"
+                    name: "Pantalones",
+                    price: "",
+                    image: "https://i.imgur.com/zsT9rfa.png",
+                    alt: "Women's lace top"
                 },
                 {
-                    name: "Sweater de Cashmere",
-                    price: "$14,500",
-                    image: "https://placehold.co/300x300",
-                    alt: "Luxurious cashmere sweater in soft pastel color with crew neck and premium knit texture"
+                    name: "Calzas/Conjuntos",
+                    price: "",
+                    image: "https://i.imgur.com/Wpak4Gl.png",
+                    alt: "Women's palazzo pants"
                 }
             ],
-            accesorios: [
+            "ropa-interior": [
                 {
-                    name: "Bolso de Cuero Genuino",
-                    price: "$11,200",
-                    image: "https://placehold.co/300x300",
-                    alt: "Genuine leather handbag in brown with multiple compartments, gold hardware and adjustable strap"
+                    name: "Boxers",
+                    price: "",
+                    image: "https://i.imgur.com/PsdC24b.png",
+                    alt: "Boxers"
                 },
                 {
-                    name: "Reloj Deportivo Smart",
-                    price: "$16,800",
-                    image: "https://placehold.co/300x300",
-                    alt: "Modern smartwatch with black silicone band, digital display and fitness tracking features"
+                    name: "Medias",
+                    price: "",
+                    image: "https://i.imgur.com/qe5flC2.png",
+                    alt: "Medias de hombre"
                 },
                 {
-                    name: "Gafas de Sol Polarizadas",
-                    price: "$4,500",
-                    image: "https://placehold.co/300x300",
-                    alt: "Polarized sunglasses with black frames, UV protection lenses and modern aviator style design"
+                    name: "Ropa interior de Mujer",
+                    price: "",
+                    image: "https://i.imgur.com/5V9DsUU.png",
+                    alt: "Tangas"
                 },
                 {
-                    name: "Bufanda de Seda",
-                    price: "$6,300",
-                    image: "https://placehold.co/300x300",
-                    alt: "Elegant silk scarf with colorful geometric pattern and soft texture for fashion accessorizing"
+                    name: "Sostenes",
+                    price: "",
+                    image: "https://i.imgur.com/m5aROy4.png",
+                    alt: "Brasiers"
                 },
                 {
-                    name: "Cinturón de Piel Italiana",
-                    price: "$8,900",
-                    image: "https://placehold.co/300x300",
-                    alt: "Italian leather belt in black with silver buckle, premium craftsmanship and classic design"
+                    name: "Bikinis",
+                    price: "",
+                    image: "https://i.imgur.com/PdAdJoW.png",
+                    alt: "Bikinis"
+                }
+            ],
+            calzado: [
+                {
+                    name: "Zapatillas",
+                    price: "",
+                    image: "https://i.imgur.com/QPEFsPu.png",
+                    alt: "Zapatillas"
+                },
+                {
+                    name: "Zapatos",
+                    price: "",
+                    image: "https://i.imgur.com/0mYPcNh.png",
+                    alt: "Zapatos"
+                },
+                {
+                    name: "Sandalias",
+                    price: "",
+                    image: "https://i.imgur.com/qReAN87.png",
+                    alt: "Sandalias"
+                },
+                {
+                    name: "Botas",
+                    price: "",
+                    image: "https://i.imgur.com/5PSaPlM.png",
+                    alt: "Botas"
+                },
+                {
+                    name: "Tacos",
+                    price: "",
+                    image: "https://i.imgur.com/cMiCUBf.png",
+                    alt: "Tacos"
                 }
             ],
             joyas: [
                 {
-                    name: "Collar de Perlas Cultivadas",
-                    price: "$19,500",
-                    image: "https://placehold.co/300x300",
+                    name: "Collares",
+                    price: "",
+                    image: "https://i.imgur.com/mu2OyZ8.png",
                     alt: "Elegant cultured pearl necklace with lustrous white pearls and gold clasp for formal occasions"
                 },
                 {
-                    name: "Anillo de Compromiso Oro Blanco",
-                    price: "$45,000",
-                    image: "https://placehold.co/300x300",
+                    name: "Anillos",
+                    price: "",
+                    image: "https://i.imgur.com/glS7HTd.png",
                     alt: "White gold engagement ring with brilliant cut diamond solitaire and classic prong setting"
                 },
                 {
-                    name: "Aretes de Diamante",
-                    price: "$28,000",
-                    image: "https://placehold.co/300x300",
+                    name: "Aretes/Aritos",
+                    price: "",
+                    image: "https://i.imgur.com/UZBImPl.png",
                     alt: "Diamond stud earrings with round cut stones and white gold settings for elegant sparkle"
                 },
                 {
-                    name: "Pulsera de Plata Esterlina",
-                    price: "$7,800",
-                    image: "https://placehold.co/300x300",
+                    name: "Pulseras",
+                    price: "",
+                    image: "https://i.imgur.com/b3gUviJ.png",
                     alt: "Sterling silver charm bracelet with delicate chain links and decorative pendant charms"
                 },
                 {
-                    name: "Reloj de Oro Rosa",
-                    price: "$35,600",
-                    image: "https://placehold.co/300x300",
+                    name: "Relojes",
+                    price: "",
+                    image: "https://i.imgur.com/AOmKrJm.png",
                     alt: "Rose gold luxury watch with mother of pearl dial, diamond markers and leather strap"
+                }
+            ],
+            accesorios: [
+                {
+                    name: "Bolsos",
+                    price: "",
+                    image: "https://i.imgur.com/szcnUY8.png",
+                    alt: "Genuine leather handbag in brown with multiple compartments, gold hardware and adjustable strap"
+                },
+                {
+                    name: "Mochilas",
+                    price: "",
+                    image: "https://i.imgur.com/YE3P31J.png",
+                    alt: "Modern smartwatch with black silicone band, digital display and fitness tracking features"
+                },
+                {
+                    name: "Gafas",
+                    price: "",
+                    image: "https://i.imgur.com/5xCSf1n.png",
+                    alt: "Polarized sunglasses with black frames, UV protection lenses and modern aviator style design"
+                },
+                {
+                    name: "Gorras",
+                    price: "",
+                    image: "https://i.imgur.com/lH1SqjO.png",
+                    alt: "Elegant silk scarf with colorful geometric pattern and soft texture for fashion accessorizing"
+                },
+                {
+                    name: "Cinturones",
+                    price: "",
+                    image: "https://i.imgur.com/YHTaou5.png",
+                    alt: "Italian leather belt in black with silver buckle, premium craftsmanship and classic design"
+                }
+            ],
+            cocina: [
+                {
+                    name: "Cubiertos",
+                    price: "",
+                    image: "https://i.imgur.com/hxXIqPT.png",
+                    alt: "Professional stainless steel knife set with wooden block holder and sharp cutting blades for kitchen use"
+                },
+                {
+                    name: "Platos",
+                    price: "",
+                    image: "https://i.imgur.com/GvwNAwj.png",
+                    alt: "Premium non-stick frying pan with ergonomic handle and ceramic coating for healthy cooking"
+                },
+                {
+                    name: "Vasos",
+                    price: "",
+                    image: "https://i.imgur.com/i4Qk86y.png",
+                    alt: "Stainless steel stand mixer with multiple attachments and powerful motor for baking and cooking"
+                },
+                {
+                    name: "Ollas",
+                    price: "",
+                    image: "https://i.imgur.com/ngNdsob.png",
+                    alt: "Multi-layer cookware set with various sized pots and pans featuring heat-resistant handles"
+                },
+                {
+                    name: "Sartenes",
+                    price: "",
+                    image: "https://i.imgur.com/nLlm8iz.png",
+                    alt: "Electric food processor with multiple blades and containers for chopping, slicing and mixing ingredients"
+                }
+            ],
+            tecnologia: [
+                {
+                    name: "Celulares",
+                    price: "",
+                    image: "https://i.imgur.com/jKAdbQu.png",
+                    alt: "Wireless Bluetooth headphones"
+                },
+                {
+                    name: "Auriculares",
+                    price: "",
+                    image: "https://i.imgur.com/iixgBuJ.png",
+                    alt: "Smartwatch with heart rate monitor"
+                },
+                {
+                    name: "Cargadores",
+                    price: "",
+                    image: "https://i.imgur.com/grlyMrD.png",
+                    alt: "High capacity portable charger"
+                },
+                {
+                    name: "Parlante",
+                    price: "",
+                    image: "https://i.imgur.com/yqHwAxr.png",
+                    alt: "Portable Bluetooth speaker"
+                },
+                {
+                    name: "Smartwatch",
+                    price: "",
+                    image: "https://i.imgur.com/12YhOXe.png",
+                    alt: "Ergonomic wireless keyboard"
                 }
             ],
             textil: [
                 {
-                    name: "Juego de Sábanas Algodón Egipcio",
-                    price: "$13,500",
-                    image: "https://placehold.co/300x300",
+                    name: "Sabanas",
+                    price: "",
+                    image: "https://i.imgur.com/gXjkx0k.png",
                     alt: "Egyptian cotton bed sheet set in white with high thread count and luxurious soft texture"
                 },
                 {
-                    name: "Manta Tejida a Mano",
-                    price: "$9,200",
-                    image: "https://placehold.co/300x300",
+                    name: "Mantas",
+                    price: "",
+                    image: "https://i.imgur.com/EjVTcL5.png",
                     alt: "Hand-knitted blanket in warm earth tones with intricate pattern and cozy wool material"
                 },
                 {
-                    name: "Cojines Decorativos Bordados",
-                    price: "$4,800",
-                    image: "https://placehold.co/300x300",
+                    name: "Almohadas",
+                    price: "",
+                    image: "https://i.imgur.com/hPJuU5R.png",
                     alt: "Decorative embroidered cushions with colorful floral patterns and soft velvet fabric finish"
                 },
                 {
-                    name: "Cortinas de Lino Natural",
-                    price: "$11,000",
-                    image: "https://placehold.co/300x300",
+                    name: "Cortinas",
+                    price: "",
+                    image: "https://i.imgur.com/gybvb64.png",
                     alt: "Natural linen curtains in beige color with elegant draping and light-filtering properties"
                 },
                 {
-                    name: "Alfombra Persa Tradicional",
-                    price: "$25,400",
-                    image: "https://placehold.co/300x300",
+                    name: "Toallas",
+                    price: "",
+                    image: "https://i.imgur.com/W2q5mAW.png",
                     alt: "Traditional Persian rug with intricate geometric patterns in rich red and blue colors"
+                }
+            ],
+            electrodomesticos: [
+                {
+                    name: "Pava electrica",
+                    price: "",
+                    image: "https://i.imgur.com/tkwQPDY.png",
+                    alt: "Programmable coffee maker"
+                },
+                {
+                    name: "Licuadora",
+                    price: "",
+                    image: "https://i.imgur.com/DbtKCzz.png",
+                    alt: "Smart robot vacuum cleaner"
+                },
+                {
+                    name: "Freidora de Aire",
+                    price: "",
+                    image: "https://i.imgur.com/mZKYN2m.png",
+                    alt: "High-power blender"
+                },
+                {
+                    name: "Ventilador",
+                    price: "",
+                    image: "https://i.imgur.com/S6leFFA.png",
+                    alt: "Stainless steel toaster"
+                },
+                {
+                    name: "Horno Eléctrico",
+                    price: "",
+                    image: "https://i.imgur.com/vA6Pxl4.png",
+                    alt: "Compact electric oven"
                 }
             ]
         };
@@ -382,7 +583,19 @@
             document.querySelector(`[data-category="${category}"]`).classList.add('category-active');
             
             // Set category title
-            categoryTitle.textContent = `Productos de ${category.charAt(0).toUpperCase() + category.slice(1)}`;
+            const categoryNames = {
+                "ropa-hombres": "Ropa para Hombres",
+                "ropa-mujer": "Ropa para Mujer",
+                "ropa-interior": "Ropa Interior",
+                "calzado": "Calzado",
+                "joyas": "Joyas",
+                "accesorios": "Accesorios",
+                "cocina": "Cocina",
+                "tecnologia": "Tecnología",
+                "textil": "Textil",
+                "electrodomesticos": "Electrodomésticos"
+            };
+            categoryTitle.textContent = `Productos de ${categoryNames[category] || category.charAt(0).toUpperCase() + category.slice(1)}`;
             
             // Clear previous products
             productsContainer.innerHTML = '';
@@ -426,8 +639,15 @@
 
         function consultWhatsApp(productName, price) {
             const phoneNumber = "5493518070557";
-            const message = `¡Hola Bazar Diany! Quisiera consultar sobre los productos.: ${productName} - Precio: ${price}. ¿Podrían darme más información?`;
-            const whatsappUrl = `https://wa.me/5493518070557?text=¡Hola%20Bazar%20Diany!%20Quisiera%20consultar%20sobre%20unos%20productos.`;
+            const message = `¡Hola Bazar Diany! Quisiera consultar sobre el producto: ${productName} ¿Podrían darme más información?`;
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function consultWhatsAppGeneral() {
+            const phoneNumber = "5493518070557";
+            const message = `¡Hola Bazar Diany! Quisiera consultar sobre el catálogo completo de productos.`;
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
         }
 
@@ -443,4 +663,3 @@
     </script>
 </body>
 </html>
-
